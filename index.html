@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: ¿Qué es el Aprendizaje Automático en IA?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        .flow-line {
+            border-left-width: 2px;
+            border-color: #ff6700;
+            border-style: dashed;
+        }
+        .icon-bg {
+            background-color: #3393FF;
+            color: white;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <header class="text-center py-12">
+            <div class="text-6xl mb-4" aria-hidden="true">
+                <span class="inline-block text-blue-600">🧠</span>
+                <span class="inline-block text-gray-400">⚙️</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 leading-tight">¿Qué es el Aprendizaje Automático en IA?</h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-600">Sistemas que aprenden de los datos sin necesidad de ser programados explícitamente.</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section id="definicion" class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-4">1. ¿En qué consiste?</h2>
+                    <p class="text-lg max-w-2xl mx-auto mb-8">
+                        Es una rama de la Inteligencia Artificial que se basa en algoritmos capaces de identificar patrones complejos en grandes volúmenes de datos. A partir de estos patrones, el sistema puede realizar predicciones o tomar decisiones informadas.
+                    </p>
+                </div>
+                
+                <div class="text-center text-4xl mb-8" aria-hidden="true">
+                     📖 → 📈 → 🤖 
+                </div>
+
+                <div class="mt-8">
+                     <h3 class="text-2xl font-bold text-center mb-6">Ejemplos en tu día a día:</h3>
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <span class="text-4xl" role="img" aria-label="Pantalla de TV">📺</span>
+                            <p class="mt-2 font-semibold">Recomendaciones de Netflix</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <span class="text-4xl" role="img" aria-label="Email">✉️</span>
+                             <p class="mt-2 font-semibold">Filtros de Spam</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <span class="text-4xl" role="img" aria-label="Coche">🚗</span>
+                             <p class="mt-2 font-semibold">Coches Autónomos</p>
+                        </div>
+                     </div>
+                </div>
+            </section>
+
+            <section id="metodos" class="text-center">
+                <h2 class="text-3xl font-bold text-blue-700 mb-8">2. ¿Cómo aprende un sistema? Los 3 Métodos Principales</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                        <div class="text-5xl mb-4">🏷️</div>
+                        <h3 class="text-2xl font-bold mb-2">Aprendizaje Supervisado</h3>
+                        <p class="text-gray-600 flex-grow">Se le "enseña" con datos previamente etiquetados. El sistema aprende a asociar una entrada con una salida correcta.</p>
+                        <p class="mt-4 bg-blue-100 text-blue-800 font-semibold px-4 py-2 rounded-full">Ej: Clasificar emails</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                        <div class="text-5xl mb-4">🧩</div>
+                        <h3 class="text-2xl font-bold mb-2">Aprendizaje No Supervisado</h3>
+                        <p class="text-gray-600 flex-grow">Se le entregan datos sin etiquetar para que descubra por sí mismo patrones, estructuras o agrupaciones ocultas.</p>
+                        <p class="mt-4 bg-blue-100 text-blue-800 font-semibold px-4 py-2 rounded-full">Ej: Segmentar clientes</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                        <div class="text-5xl mb-4">🏆</div>
+                        <h3 class="text-2xl font-bold mb-2">Aprendizaje por Refuerzo</h3>
+                        <p class="text-gray-600 flex-grow">El sistema aprende a través del método de ensayo y error, recibiendo "recompensas" por acciones correctas.</p>
+                        <p class="mt-4 bg-blue-100 text-blue-800 font-semibold px-4 py-2 rounded-full">Ej: Jugar ajedrez</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="rol-humano" class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-blue-700 text-center mb-4">3. El Rol Clave de los Humanos</h2>
+                <p class="text-lg max-w-3xl mx-auto text-center mb-10">El Aprendizaje Automático no es magia, es una colaboración. Los humanos son esenciales para guiar el proceso, entrenar, validar y, sobre todo, guiar éticamente los modelos para asegurar que sean justos y beneficiosos.</p>
+                
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div class="flex-shrink-0 text-6xl p-4 rounded-full icon-bg">👤</div>
+                    <div class="w-full md:w-auto flex md:flex-col justify-around md:justify-center">
+                        <div class="h-full md:h-auto md:w-full flow-line"></div>
+                    </div>
+                    <div class="space-y-6 w-full">
+                        <div class="bg-gray-50 border-l-4 border-orange-500 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-lg">En el Aprendizaje Supervisado: El Humano es Maestro</h4>
+                            <p>Etiquetamos los datos iniciales. Por ejemplo, marcamos miles de imágenes para que el sistema aprenda a diferenciar "gatos" de "perros".</p>
+                        </div>
+                        <div class="bg-gray-50 border-l-4 border-orange-500 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-lg">En el Aprendizaje No Supervisado: El Humano es Validador</h4>
+                            <p>Interpretamos y validamos los patrones que el algoritmo encuentra, confirmando si los segmentos de clientes detectados tienen sentido para el negocio.</p>
+                        </div>
+                         <div class="bg-gray-50 border-l-4 border-orange-500 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-lg">En el Aprendizaje por Refuerzo: El Humano es Diseñador de Metas</h4>
+                            <p>Definimos el sistema de recompensas, estableciendo las reglas y objetivos para que el agente aprenda la estrategia óptima.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="conclusion" class="text-center">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-4">Dato Clave</h2>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div class="chart-container">
+                            <canvas id="dataPrepChart"></canvas>
+                        </div>
+                        <div class="md:text-left">
+                            <div class="text-7xl font-black text-orange-500">80%</div>
+                            <p class="text-2xl font-bold mt-2">Del tiempo en un proyecto de ML se dedica a la preparación de datos.</p>
+                            <p class="text-gray-600 mt-2">La recolección, limpieza y etiquetado de datos es el paso más crítico y laborioso.</p>
+                        </div>
+                    </div>
+                     <p class="mt-12 text-xl font-bold max-w-3xl mx-auto">
+                        Conclusión: El Aprendizaje Automático es una herramienta transformadora que, lejos de reemplazar a los humanos, requiere una colaboración inteligente entre la persona y la IA para alcanzar su máximo potencial.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-8 mt-8 border-t">
+            <p class="text-gray-500">IA Education</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const wrapLabel = (label, maxWidth) => {
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine += ' ' + word;
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+        
+        const ctx = document.getElementById('dataPrepChart').getContext('2d');
+        const dataPrepChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Preparación de Datos', 'Otras Tareas (Modelado, Despliegue)'],
+                datasets: [{
+                    data: [80, 20],
+                    backgroundColor: [
+                        '#0062E4', 
+                        '#FF6700'  
+                    ],
+                    borderColor: '#ffffff',
+                    borderWidth: 4,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '70%',
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                size: 14,
+                                family: 'Inter'
+                            },
+                             boxWidth: 20,
+                             padding: 20
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            },
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
